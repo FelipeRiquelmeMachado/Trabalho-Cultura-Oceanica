@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mar Escola de Mergulho</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  </head>
+  <body>
+    <div class="hero-container">
+
+      <!-- Vídeo de fundo -->
+      <video autoplay muted loop playsinline class="background-video">
+        <source src="{{ url_for('static', filename='movies-picture/teste.mp4') }}" type="video/mp4" />
+        Seu navegador não suporta vídeos HTML5.
+      </video>
+
+      <!-- Sobreposição escura por cima do vídeo -->
+      <div class="overlay"></div>
+
+      <!-- Cabeçalho -->
+      <header>
+        <div class="logo-title" aria-label="Logo e nome do site">
+          <div class="logo" aria-hidden="true">M</div>
+          <div class="title-text">A definir</div>
+        </div>
+        <nav aria-label="Navegação principal">
+          <a href="#" class="active" aria-current="page">Início</a>
+          <a href="#">Sobre</a>
+          <a href="#">Locais de mergulho</a>
+          <a href="#">Serviços</a>
+          <a href="#">FAQ</a>
+        </nav>
+      </header>
+
+      <!-- Conteúdo principal -->
+      <main>
+        <h1>A <br />Definir</h1>
+        <p>A definir</p>
+        <button class="btn-agendar" aria-label="Agendar agora">
+          Agendar agora
+        </button>
+      </main>
+    </div>
+  </body>
+</html>
