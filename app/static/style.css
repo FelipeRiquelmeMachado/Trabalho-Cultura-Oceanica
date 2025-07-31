@@ -51,7 +51,7 @@ html {
 
 /* Garante que o conteúdo fique acima do overlay */
 .hero-container>header,
-.hero-container>.main-start {
+.hero-container>.informative-start {
   position: relative;
   z-index: 1;
 }
@@ -122,7 +122,7 @@ nav a:hover {
 }
 
 
-.main-start {
+.informative-start {
   position: relative;
   z-index: 1;
   max-width: 1600px;
@@ -135,7 +135,7 @@ nav a:hover {
   padding-right: 48px;
 }
 
-.main-start h1 {
+.informative-start h1 {
   font-size: 3.5rem;
   padding-top: 50px;
   font-weight: 900;
@@ -146,7 +146,7 @@ nav a:hover {
   user-select: none;
 }
 
-.main-start p {
+.informative-start p {
   margin-top: 12px;
   font-weight: 700;
   font-size: 1.325rem;
@@ -180,7 +180,7 @@ nav a:hover {
 }
 
 /* Efeito Parallax */
-.parallax-section {
+.section-second-part article {
   height: 90vh;
   background-image: url('../static/movies-picture/picture/lulas.png');
   background-attachment: fixed;
@@ -195,7 +195,7 @@ nav a:hover {
   position: relative;
 }
 
-.parallax-section::after {
+.section-second-part article::after {
   content: "";
   position: absolute;
   top: 0;
@@ -212,28 +212,21 @@ nav a:hover {
   padding: 20px;
 }
 
-.conteudo-normal {
-  padding: 100px 40px;
-  background: white;
-  color: #333;
-}
-
-.main-second-part p {
-  text-align: justify;
-
-}
-
-.title-sobre {
+.parallax-content h2 {
 
   font-size: 2.25rem;
   font-weight: 800;
   text-align: center;
-  margin-bottom: 3.5rem;
+  margin-bottom: 30px;
 }
 
+.parallax-content p {
+  text-align: justify;
+
+}
 
 /*-----------------------------*/
-/* Seção de Curiosidades */
+/* Sessão de Curiosidades */
 
 .curiosidades-main {
   background-color: white;
@@ -287,67 +280,51 @@ nav a:hover {
 /* Seção Conheça o Oceano */
 /* Seção para Artigos */
 
-.container {
-  width: 100%;
-  height: 80vh;
-  display: flex;
-  overflow: hidden;
+
+.informative-text-session-3-home {
   background-color: white;
-
+  padding: 30px;
 }
 
-.content {
-  flex: 1 1 50%;
-  padding: 4rem 3rem;
+.text-image-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1.5rem;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 30px;
 }
 
-.content h1 {
-  margin: 0 0 1rem 0;
+.text-content {
+  flex: 1 1 50%;
+  color: black;
+}
+
+.text-content h1 {
   font-size: 2.25rem;
   font-weight: 800;
   text-align: left;
+  margin-bottom: 2.5rem;
   color: black;
 }
 
-.content p {
-  margin: 0;
+.text-content p {
   text-align: justify;
-  font-size: 0.875rem;
-  line-height: 1.5;
-  max-width: 600px;
+  margin-bottom: 1rem;
   color: black;
-}
-
-.button-container {
-  margin-top: 2rem;
 }
 
 .image-wrapper {
   flex: 1 1 50%;
-  position: relative;
-  overflow: hidden;
+  height: auto;
 }
 
 .image-wrapper img {
   width: 100%;
-  height: 90%;
+  height: 100%;
   object-fit: cover;
   display: block;
+
 }
 
-
-/*---------------------*/
-/*Sessão Mapa */
-
-.mapa {
-  width: 100%;
-  height: 450px;
-  border: 0;
-}
 
 
 /* -------------------- */
@@ -449,7 +426,7 @@ form {
 
 .form-group textarea {
   resize: none;
-} 
+}
 
 .botao-enviar {
   width: 100%;
