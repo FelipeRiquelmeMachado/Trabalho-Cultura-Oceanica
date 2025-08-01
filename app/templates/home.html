@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <div class="hero-container">
+  <div class="hero-container">  
 
     <!-- Vídeo de fundo -->
     <video autoplay muted loop playsinline class="background-video">
@@ -36,7 +36,8 @@
     <!-- Conteúdo principal -->
 
     <div class="informative-start">
-      <h1> Maré de histórias<br /> vivas.</h1>
+      <h1> Maré de <br>
+        histórias vivas.</h1>
       <p>A O oceano não guarda só águas profundas, mas histórias que moldam identidades.</p>
       <button class="btn-agendar" aria-label="Agendar agora">
         Conheça mais
@@ -156,68 +157,54 @@
       </div>
     </section>
 
-
-    <!-- SEÇÃO DE CONTATO -->
-    <section class="section-contato">
-      <div class="section-contato-container">
-        <!-- ESQUERDA -->
-        <div class="section-contato-left">
-          <h2>Contato</h2>
-          <p>Nosso Endereço</p>
-          <p>Nosso Número</p>
-          <p>Nosso Número</p>
-          <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+    <div style="background-color: white;">
+      <section class="photo-img-phrase">
+        <div class="image-phrase">
+          <img src="../static/movies-picture/picture/montanha.avif" alt="">
+          <div class="image-phrase-text">
+            A<br><span>Definir</span>
           </div>
         </div>
-        <!-- DIREITA -->
-        <div class="section-contato-right">
-          <form>
-            <div class="form-row">
-              <div class="form-group">
-                <label>Nome</label>
-                <input type="text" name="nome">
-              </div>
-              <div class="form-group">
-                <label>Sobrenome</label>
-                <input type="text" name="sobrenome">
-              </div>
-            </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label>Email *</label>
-                <input type="email" name="email" required>
-              </div>
-              <div class="form-group">
-                <label>Telefone *</label>
-                <input type="tel" name="telefone" required>
-              </div>
-            </div>
-            <div class="form-group">
-              <label>Insira sua mensagem aqui</label>
-              <textarea rows="4" name="mensagem"></textarea>
-            </div>
-            <button class="botao-enviar">Enviar</button>
-          </form>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
 
+  <div class="container">
+    <form action="#" method="POST" novalidate>
+      <div class="grid">
+        <div>
+          <label for="firstName">First Name *</label>
+          <input id="firstName" name="firstName" type="text" required />
+        </div>
+        <div>
+          <label for="lastName">Last Name *</label>
+          <input id="lastName" name="lastName" type="text" required />
+        </div>
+        <div class="full-span">
+          <label for="email">Email Address *</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+      </div>
+      <div class="checkbox-container">
+        <input id="subscribe" name="subscribe" type="checkbox" required />
+        <label for="subscribe">Yes, subscribe me to your newsletter. *</label>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
   <footer>
     <div class="footer-links">
-      <a href="#">A definir</a>
-      <a href="#">A definir</a>
-      <a href="#">A definir</a>
+      <a href="#">Terms &amp; Conditions</a>
+      <a href="#">Privacy Policy</a>
     </div>
-
-    <div class="footer-text">
-      © 2025 Lorem, ipsum dolor sit amet consectetur adipisicing elit. <a href="https://www.wix.com" target="_blank"
-        style="color:white; text-decoration: underline;"></a>
+    <div>©2035 by Save Our Shores. Powered and secured by <a href="#">Wix</a></div>
+    <div class="footer-social" aria-label="Social media links">
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
     </div>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 </body>
 
 </html>
