@@ -1,0 +1,111 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0c1833;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Container centralizado */
+.container, .container-equipe {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Seção Sobre */
+.sobre {
+  text-align: center;
+}
+
+.titulo-principal {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.subtitulo {
+  font-size: 1.8rem;
+  color: #fdd835;
+  margin-bottom: 30px;
+}
+
+.texto {
+  font-size: 1rem;
+  color: #dddddd;
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Seção Equipe */
+.equipe {
+  background-color: #0c1833;
+}
+
+.container-equipe {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+  text-align: center;
+}
+
+.membro {
+  max-width: 300px;
+}
+
+.foto-membro {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.nome-membro {
+  font-size: 1.25rem;
+  color: #fdd835;
+  margin-bottom: 5px;
+}
+
+.cargo-membro {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.descricao-membro {
+  font-size: 0.95rem;
+  color: #dddddd;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .titulo-principal {
+    font-size: 2.2rem;
+  }
+
+  .subtitulo {
+    font-size: 1.4rem;
+  }
+
+  .container-equipe {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .membro {
+    margin-bottom: 40px;
+  }
+
+  .texto {
+    padding: 0 10px;
+  }
+}
