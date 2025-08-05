@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% block title %}Mares da Cultura{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container" aria-label="Save Our Shores logo">
+            <div class="logo">
+                <p>M</p>
+            </div>
+        </div>
+        <nav class="desktop-nav" role="navigation" aria-label="Primary navigation">
+            <a href="#home" tabindex="0">Home</a>
+            <a href="#about" tabindex="0">About</a>
+            <a href="#contact" tabindex="0">Contact</a>
+        </nav>
+        <button class="hamburger-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <aside class="mobile-nav-overlay" id="mobile-menu" role="dialog" aria-modal="true" aria-hidden="true" tabindex="-1">
+        <button class="close-btn" aria-label="Close menu">&times;</button>
+        <nav role="navigation" aria-label="Mobile primary navigation">
+            <a href="#" tabindex="0">Home</a>
+            <a href="#" tabindex="0">About</a>
+            <a href="#" tabindex="0">Contact</a>
+        </nav>
+    </aside>
+
+    <main>
+        {% block content %}
+
+        {% endblock %}
+    </main>
+    
+    <footer class="footer">
+        <p>©2025 Maré de histórias vivas. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script/base.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</body>
+
+</html>
